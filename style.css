@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 3.5rem;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-container {
+  width: 1000px;
+  background-color: hsl(233, 47%, 7%);
+  margin-top: 4rem;
+  padding: 10rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 8px 8px 8px 8px;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+}
+/*
+.container * {
+  flex-basis: 100%;
+}
+*/
+.image-container {
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+}
+
+/*
+.image-container::after {
+  content: "";
+  background-color: hsla(277, 90%, 31%, 0.596);
+  position: absolute;
+  /*
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  inset: 0px;
+}
+*/
+
+.image-conColor {
+  background-color: hsla(277, 90%, 31%, 0.596);
+  inset: 0px;
+  position: absolute;
+  padding: 40%;
+}
+
+.pic {
+  width: 400px;
+}
+
+.business {
+  background-color: hsl(244, 38%, 16%);
+  padding: 4rem 6rem;
+}
+
+span {
+  color: hsl(276, 40%, 76%);
+}
+
+.business-details {
+  display: flex;
+  gap: 35px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.insight {
+  font-size: 1.2rem;
+  color: hsla(251, 40%, 76%, 0.678);
+}
+
+.attribution {
+  font-size: 3rem;
+  color: hsl(228, 45%, 44%);
+  text-align: center;
+}
+
+/*---------Responsive layout----------*/
+
+@media (max-width: 23.44rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+  }
+
+  .image-container {
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+  }
+
+  h2 {
+    padding: 4rem;
+    margin-top: -2.5rem;
+    font-size: 2.7rem;
+  }
+  p {
+    font-size: 2rem;
+    margin-top: -3rem;
+  }
+
+  .pic {
+    visibility: hidden;
+  }
+
+  .business {
+    text-align: center;
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .business-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container {
+    width: 600px;
+  }
+  .main {
+    margin: 0 auto;
+  }
+}
